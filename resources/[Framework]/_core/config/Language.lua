@@ -1,5 +1,5 @@
 -- Language in Game
-GameLanguage = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de/us
+GameLanguage = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de/en
 Language = {
     ["br"] = {
         NO_STEAM = "Steam não detectada",
@@ -21,24 +21,24 @@ Language = {
         CANNOT_DROP_ITEM = "Esse item não pode ser dropável.",
         NO_NEAREST_PLAYER = "Nenhum jogador próximo."
     },
-    ["us"] = {
-        NO_STEAM = "No steam",
+    ["en"] = {
+        NO_STEAM = "Steam must be open",
         CHECK_WHITELIST = "Checking your whitelist...",
         CHECK_BANLIST = "Checking if your account is banned...",
         JOIN_PERMITTED = "Loading server...",
         BANNED = "You are banned.",
-        NO_WHITELIST = "tried connect without whitelist",
-        DONT_PERMITTED = "Don't have permission to join in this server. HEX:",
-        AUTO_QUEUEWL = "Wait a minute to remove from list non-whitelist.",
+        NO_WHITELIST = "You are not whitelisted.",
+        DONT_PERMITTED = "You do not have permission to join in this server. HEX:",
+        AUTO_QUEUEWL = "Wait a minute to be removed from the non-whitelist list.",
         --
-        WEAPON_EQUIPPED = ' Weapon already equipped.',
+        WEAPON_EQUIPPED = 'Weapon already equipped.',
         NO_WEAPON_TYPE = 'No equipped weapon supports this type of ammunition!',
         --
         RECEIVED_ITEM = "Received",
         FROM = "from",
         TO = "to",
-        SENDED_ITEM = "Sended",
-        CANNOT_DROP_ITEM = "This item cannot be dropable.",
+        SENDED_ITEM = "Sent",
+        CANNOT_DROP_ITEM = "This item cannot be dropped.",
         NO_NEAREST_PLAYER = "No players nearby."
     },
     ["es"] = { -- translation by @PokeSer
@@ -103,7 +103,7 @@ Language = {
     }
 }
 
-UsingLanguageUI = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de
+UsingLanguageUI = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de/en
 UILanguage = {
     ["br"] = {
         ["_creator"] = {
@@ -351,6 +351,130 @@ UILanguage = {
             USE = "Usar",
             SEND = "Dar",
             DROP = "Tirar"
+        }
+    },
+    ["en"] = { -- translation by @BattleRattt
+        ["_creator"] = {
+            menu1 = {
+                PARENTS = "Parents",
+                FATHER_FACE = "Father's Face",
+                FATHER_COLOR = "Father's skin color",
+                MOTHER_FACE = "Mother's Face",
+                MOTHER_COLOR = "Mother's skin color",
+                PREDOMINANT_FACE = "Face dominance",
+                PREDOMINANT_COLOR = "Color dominance",
+                --- OTHER TAB
+                EYES = "Eyes",
+                EYES_SIZE = "Eye Size",
+                EYES_COLOR = "Eye Color",
+                EYEBROWN = "Eyebrows",
+                EYEBROWN_SIZE = "Eyebrow size",
+                EYEBROWN_COLOR = "Eyebrow color",
+                EYEBROWN_HEIGHT = "Eyebrow height",
+                EYEBROWN_WIDTH = "Eyebrow width",
+                --- OTHER TAB
+                NOSE = "Nose",
+                NOSE_HEIGHT = "Nose height",
+                NOSE_WIDTH = "Nose width",
+                NOSE_LENGTH = "Nose length",
+                NOSE_CAVITY = "Nasal Cavity",
+                NOSE_TIP = "Tip of nose",
+                NOSE_CURVATURE = "Curvature of the nose",
+                -- OTHER TAB 
+                CHIN = "Chin",
+                CHIN_LENGTH = "Chin length",
+                CHIN_POSITION = "Chin position",
+                CHIN_WIDTH = "Chin width",
+                CHIN_FORM = "Chin shape",
+                JAW_WIDTH = "Jaw width",
+                JAW_HEIGHT = "Jaw height",
+                -- OTHER TAB 
+                CHEEK = "Cheek",
+                CHEEK_HEIGHT = "Cheek height",
+                CHEEK_WIDTH = "Cheek width",
+                CHEEK_SIZE = "Cheek size",
+                -- OTHER TAB 
+                MOUTH = "Mouth",
+                LIPS = "Lips",
+                -- OTHER TAB 
+                NECK = "Neck",
+                NECK_SIZE = "Neck width",
+            },
+            menu2 = {
+                FACE_MARKS = "Face marks",
+                ASPECTS = "Appearance",
+                SKIN = "Skin",
+                FRECKLES = "Freckles",
+                -- OTHER TAB 
+                HAIR = "Hair style",
+                HAIR_COLOR = "Hair color",
+                HAIR_HIGHLIGHTS = "Highlights",
+                -- OTHER TAB 
+                BEARDS = "Beard",
+                BEARDS_COLOR = "Beard color",
+                -- OTHER TAB
+                MAKEUP = "Makeup",
+                MAKEUP_BLUSH = "Makeup blush",
+                MAKEUP_BLUSH_COLOR = "Blush color",
+                MAKEUP_LIPSTICK = "Lipstick",
+                MAKEUP_LIPSTICK_COLOR = "Lipstick color",
+                -- OTHER TAB
+                OLD_AGE = "Old age",
+                WRINKLES = "Wrinkles",
+                DEGREE_WRINKLES = "Wrinkle amount",
+                -- OTHER TAB
+                TORSO = "Torso",
+                TORSO_FUR = "Body hair",
+                TORSO_FUR_COLOR = "Body hair color",
+                -- OTHER TAB
+                BODY = "Body",
+                BODY_MARKS = "Body spots",
+                BODY_MARKS_2 = "Body spots density",
+            },
+            menu3 = {
+                NAME = "Name",
+                NAME_SURNAME = "First name and last name",
+                NAME_VALUE = "Johhny Jones",
+                AGE = "Age",
+                -- OTHER TAB
+                JACKET = "Jacket",
+                JACKET_COAT = "Sweater",
+                JACKET_TEXTURE = "Texture",
+                -- OTHER TAB
+                SHIRT = "Shirt",
+                T_SHIRT = "Shirt",
+                T_SHIRT_TEXTURE = "Texture",
+                -- OTHER TAB
+                TORSO = "Torso/Arms",
+                TORSO_TEXTURE = "Texture",
+                -- OTHER TAB
+                LEGS = "Pants",
+                LEGS_TEXTURE = "Texture",
+                -- OTHER TAB
+                FOOTS = "Shoes",
+                FOOTS_TEXTURE = "Texture",
+                -- OTHER TAB
+                ACESSORY = "Accessories",
+                ACESSORY_TEXTURE = "Texture",
+            }
+        },
+        ["_inventory"] = {
+            INVENTORY = "Inventory",
+            ALL_ITEMS = "All items",
+            FOOD = "Food",
+            DRINKS = "Drinks",
+            WEAPONS = "Weapons",
+            AMMO = "Ammo",
+            SHIRTS = "Shirts",
+            UTILS = "Utilities",
+
+            VEHICLE = "Vehicles",
+            IDENTITY = "Identity",
+
+            QUANTITY = "Quantity",
+            USE = "Use",
+            SEND = "Give",
+            DROP = "Drop"
         }
     },
     ["de"] = { -- translation by @Naifen-Phoxidas
