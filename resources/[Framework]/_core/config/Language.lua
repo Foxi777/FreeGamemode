@@ -1,5 +1,5 @@
 -- Language in Game
-GameLanguage = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de/us
+GameLanguage = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de/en
 Language = {
     ["br"] = {
         NO_STEAM = "Steam não detectada",
@@ -22,7 +22,7 @@ Language = {
         NO_NEAREST_PLAYER = "Nenhum jogador próximo."
     },
     ["en"] = {
-        NO_STEAM = "No steam",
+        NO_STEAM = "Steam must be open",
         CHECK_WHITELIST = "Checking your whitelist...",
         CHECK_BANLIST = "Checking if your account is banned...",
         JOIN_PERMITTED = "Loading server...",
@@ -103,7 +103,7 @@ Language = {
     }
 }
 
-UsingLanguageUI = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de
+UsingLanguageUI = "br" -- CHANGE ONLY IF HAVE THIS LANGUAGE ;D br/es/de/en
 UILanguage = {
     ["br"] = {
         ["_creator"] = {
